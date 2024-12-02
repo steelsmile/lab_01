@@ -14,6 +14,47 @@
 ///
 void KarelProgram() {
 /// @todo Добавить программу для Карела
+TurnLeft();
+while(FrontIsClear()== true){
+    TurnLeft();
+    TurnLeft();
+    TurnLeft();
+        while(FrontIsClear() == true){
+            if(BeepersPresent() == true){
+                PickBeeper();
+            }
+            if(BeepersPresent() == false and FrontIsClear() == true){
+                Move();
+            }
+        } 
+        while(BeepersPresent() == true){
+            PickBeeper();
+        }
+        TurnLeft();
+        Move();
+        TurnLeft();
+        while(FrontIsClear() == true){
+            Move();
+        }
+        TurnLeft();
+        TurnLeft();
+        TurnLeft();
+}
+TurnLeft();
+TurnLeft();
+TurnLeft();
+ while(FrontIsClear() == true){
+    if (BeepersPresent() == true){
+        PickBeeper();
+    }
+if(BeepersPresent() == false and FrontIsClear() == true){
+    Move();
+}
+ }
+while(BeepersPresent() == true){
+    PickBeeper();
+
+}
 
 }
 
@@ -22,7 +63,7 @@ void KarelProgram() {
 /// Стартовая функция
 ///
 int main() {
-    LoadWorld("worlds/collect_newspaper.w");
+    LoadWorld("worlds/CB_01.w");
     KarelProgram();
     Finish();
     return 0;
