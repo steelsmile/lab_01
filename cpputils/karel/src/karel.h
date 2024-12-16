@@ -78,7 +78,7 @@ bool FrontIsClear();
  * Returns true if there is a wall or edge directly to Karel's left, or false
  * otherwise.
  */
-// bool LeftIsBlocked();
+ //bool LeftIsBlocked();
 
 /**
  * Returns true if there is no wall nor edge directly to Karel's right, or false
@@ -90,7 +90,7 @@ bool FrontIsClear();
  * Returns true if there is a wall or edge directly to Karel's right or false
  * otherwise.
  */
-// bool RightIsBlocked();
+ //bool RightIsBlocked();
 
 /**
  * Returns true if Karel is facing north or false otherwise.
